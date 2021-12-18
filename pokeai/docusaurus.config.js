@@ -4,15 +4,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Poke Ai',  // 站点标题
+  tagline: 'Dinosaurs are cool',  // 副标题
+  url: 'https://pokeai.cn',   // 网站域名
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  favicon: 'img/favicon.ico',  // 站点图标
+  organizationName: 'Pokoai', // Usually your GitHub org/user name.
+  projectName: 'Docusaurus', // Usually your repo name.
 
   presets: [
     [
@@ -20,15 +20,24 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
         },
         blog: {
+          path: 'blog',
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
             'https://github.com/facebook/docusaurus/edit/main/website/blog/',
+          postsPerPage: 5,
+          // feedOptions: {
+          //   type: 'all',
+          //   copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,
+          // },
+          // blogSidebarCount: 'ALL',
+          // blogSidebarTitle: 'All our posts',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -40,23 +49,51 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // algolia: {
+      //   appId: 'X1Z85QJPUV',
+      //   apiKey: 'bf7211c161e8205da2f933a02534105a',
+      //   indexName: 'docusaurus-2',
+      //   contextualSearch: true,
+      // },
       navbar: {
-        title: 'My Site',
+        title: 'Poke Ai',  // 页头标题
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Poke Ai Logo',  // 页头 Logo 描述
+          src: 'img/logo.svg',  // Logo 地址
+          // srcDark: 'img/docusaurus_keytar.svg',
+          // width: 32,
+          // height: 32,
         },
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'wiki/intro',
             position: 'left',
-            label: 'Tutorial',
+            label: '知识库￥',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            type: 'doc',
+            docId: 'thinking/doc-template',
+            position: 'left',
+            label: '思考?',
+          },
+          {
+            type: 'doc',
+            docId: 'reading/doc-template3',
+            position: 'left',
+            label: '书斋~',
+          },
+          {
+            type: 'doc',
+            docId: 'exercise/doc-template6',
+            position: 'left',
+            label: '运动>',
+          },
+          {to: 'blog', label: '博客', position: 'right'},
+          {to: 'about', label: '关于', position: 'right'},
+          {
+            href: 'https://arctee.cn',
+            label: '友链&导航站',
             position: 'right',
           },
         ],
@@ -65,10 +102,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '文档',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Wiki',
                 to: '/docs/intro',
               },
             ],
@@ -91,10 +128,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             ],
           },
           {
-            title: 'More',
+            title: '其它',
             items: [
               {
-                label: 'Blog',
+                label: '博客',
                 to: '/blog',
               },
               {
@@ -104,7 +141,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Poke Ai, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
