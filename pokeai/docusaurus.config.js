@@ -49,12 +49,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // algolia: {
-      //   appId: 'X1Z85QJPUV',
-      //   apiKey: 'bf7211c161e8205da2f933a02534105a',
-      //   indexName: 'docusaurus-2',
-      //   contextualSearch: true,
-      // },
+      algolia: {
+        appId: 'IHADMADDLQ',
+        apiKey: '2656c19069bdd85551b275601202758f',
+        indexName: 'docusaurus',
+        contextualSearch: true,
+      },
       navbar: {
         title: 'Poke Ai',  // 页头标题
         logo: {
