@@ -69,13 +69,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         items: [
           {
             type: 'doc',
-            docId: 'wiki/intro',
+            docId: 'wiki/wiki-home',
             position: 'left',
             label: '知识库￥',
           },
           {
             type: 'doc',
-            docId: 'thinking/doc-template',
+            docId: 'thinking/thinking-home',
             position: 'left',
             label: '思考?',
           },
@@ -108,11 +108,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             items: [
               {
                 label: '知识库',
-                to: '/docs/wiki/wiki-intro',
+                to: '/docs/wiki',
               },
               {
                 lable: '思考',
-                to: '/docs/thinking/thinking-intro'
+                to: '/docs/thinking'
               }
             ],
           },
