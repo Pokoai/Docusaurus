@@ -20,7 +20,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          path: 'docs',
+          // path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/pokoai/Docusaurus/pokeai/',
@@ -28,18 +28,17 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         // showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         blog: {
-          path: 'blog',
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/pokoai/Docusaurus/pokeai//blog/',
-          postsPerPage: 5,
-          // feedOptions: {
-          //   type: 'all',
-          //   copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,
-          // },
-          // blogSidebarCount: 'ALL',
+            'https://github.com/pokoai/Docusaurus/pokeai/blog/',
+          postsPerPage: 7,
+          blogSidebarCount: 'ALL',
           blogSidebarTitle: 'Recent posts',
+          feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} Poke Ai, Inc.`,
+          },
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -58,10 +57,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         contextualSearch: true,
       },
       navbar: {
-        title: 'Poke Ai',  // 页头标题
+        title: '破壳Ai',  // 页头标题
         logo: {
           alt: 'Poke Ai Logo',  // 页头 Logo 描述
-          src: 'img/logo.svg',  // Logo 地址
+          src: 'img/chicken.svg',  // Logo 地址
           // srcDark: 'img/docusaurus_keytar.svg',
           // width: 32,
           // height: 32,
@@ -111,7 +110,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 to: 'docs/wiki',
               },
               {
-                lable: '思考',
+                label: '思考',   // aaaaaa,折腾了这么久，结果是label写成了lable
                 to: 'docs/thinking'
               },
             ],

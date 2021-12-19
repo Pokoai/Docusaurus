@@ -1,7 +1,7 @@
 ---
 title: 我的读书笔记
 slug: /reading
-sidebar_title: Intro
+sidebar_label: Intro
 sidebar_position: 1
 ---
 

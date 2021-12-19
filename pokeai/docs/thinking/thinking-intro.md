@@ -1,7 +1,7 @@
 ---
 title: 记录思考
 slug: /thinking
-sidebar_title: Intro
+sidebar_label: Intro
 sidebar_position: 1
 ---
 

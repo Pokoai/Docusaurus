@@ -1,7 +1,7 @@
 ---
 title: 构建个人知识体系
 slug: /wiki
-sidebar_title: Intro
+sidebar_label: Intro
 sidebar_position: 1
 ---
 

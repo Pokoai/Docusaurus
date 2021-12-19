@@ -1,7 +1,7 @@
 ---
 title: 百日运动计划
 slug: /exercise
-sidebar_title: Intro
+sidebar_label: Intro
 sidebar_position: 1
 ---
 
