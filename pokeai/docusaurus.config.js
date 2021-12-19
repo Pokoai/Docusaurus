@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
   title: 'Poke Ai',  // 站点标题
-  tagline: 'Dinosaurs are cool',  // 副标题
+  tagline: '大道至简',  // 副标题
   url: 'https://pokeai.cn',   // 网站域名
   baseUrl: '/',
   onBrokenLinks: 'ignore',  // 暂时修改为 ignore ,为了 vercel 能够成功 build 该项目
@@ -23,21 +23,23 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+          editUrl: 'https://github.com/pokoai/Docusaurus/pokeai/',
         },
+        // showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
         blog: {
           path: 'blog',
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/main/website/blog/',
+            'https://github.com/pokoai/Docusaurus/pokeai//blog/',
           postsPerPage: 5,
           // feedOptions: {
           //   type: 'all',
           //   copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,
           // },
           // blogSidebarCount: 'ALL',
-          // blogSidebarTitle: 'All our posts',
+          blogSidebarTitle: 'Recent posts',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -92,8 +94,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           {to: 'blog', label: '博客', position: 'right'},
           {to: 'about', label: '关于', position: 'right'},
           {
-            href: 'https://arctee.cn',
-            label: '友链&导航站',
+            href: 'https://arctee.cn/guestbook',
+            label: '留言',
             position: 'right',
           },
         ],
@@ -102,41 +104,45 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         style: 'dark',
         links: [
           {
-            title: '文档',
+            title: '笔记',
             items: [
               {
-                label: 'Wiki',
-                to: '/docs/intro',
+                label: '知识库',
+                to: '/docs/wiki/wiki-intro',
+              },
+              {
+                lable: '思考',
+                to: '/docs/thinking/thinking-intro'
+              }
+            ],
+          },
+          {
+            title: '社交媒体',
+            items: [
+              {
+                label: '首页',
+                href: 'https://pokeai.cn',
+              },
+              {
+                label: '联系我',
+                href: 'https://pokeai.cn/about',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/pokoai',
               },
             ],
           },
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: '其它',
+            title: '友情链接',
             items: [
               {
                 label: '博客',
                 to: '/blog',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Arctee',
+                href: 'https://arctee.cn',
               },
             ],
           },
