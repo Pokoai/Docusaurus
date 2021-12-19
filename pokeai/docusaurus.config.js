@@ -5,10 +5,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
   title: 'Poke Ai',  // 站点标题
-  tagline: '大道至简',  // 副标题
+  tagline: 'Focus - Keep things simple',  // 副标题
   url: 'https://pokeai.cn',   // 网站域名
   baseUrl: '/',
-  onBrokenLinks: 'throw',  // 暂时修改为 ignore ,为了 vercel 能够成功 build 该项目
+  onBrokenLinks: 'ignore',  // 暂时修改为 ignore ,为了 vercel 能够成功 build 该项目
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',  // 站点图标
   organizationName: 'Pokoai', // Usually your GitHub org/user name.
@@ -69,25 +69,25 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         items: [
           {
             type: 'doc',
-            docId: 'wiki/wiki-home',
+            docId: 'wiki/wiki-intro',
             position: 'left',
-            label: '知识库￥',
+            label: '知识库&',
           },
           {
             type: 'doc',
-            docId: 'thinking/thinking-home',
+            docId: 'thinking/thinking-intro',
             position: 'left',
             label: '思考?',
           },
           {
             type: 'doc',
-            docId: 'reading/doc-template3',
+            docId: 'reading/reading-intro',
             position: 'left',
             label: '书斋~',
           },
           {
             type: 'doc',
-            docId: 'exercise/doc-template6',
+            docId: 'exercise/exercise-intro',
             position: 'left',
             label: '运动>',
           },
@@ -108,28 +108,24 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             items: [
               {
                 label: '知识库',
-                to: '/docs/wiki',
+                to: 'docs/wiki',
               },
               {
                 lable: '思考',
-                to: '/docs/thinking'
-              }
+                to: 'docs/thinking'
+              },
             ],
           },
           {
             title: '社交媒体',
             items: [
               {
-                label: '首页',
-                href: 'https://pokeai.cn',
-              },
-              {
                 label: '联系我',
                 href: 'https://pokeai.cn/about',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/pokoai',
+                href: 'https://github.com/Pokoai/Docusaurus',
               },
             ],
           },

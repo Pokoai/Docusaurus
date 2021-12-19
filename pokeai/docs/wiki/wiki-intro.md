@@ -1,6 +1,7 @@
 ---
-title: 喜欢在发表思考感悟
-slug: /think
+title: 构建个人知识体系
+slug: /wiki
+sidebar_title: Intro
 sidebar_position: 1
 ---
 
