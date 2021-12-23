@@ -60,7 +60,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         title: '破壳Ai',  // 页头标题
         logo: {
           alt: 'Poke Ai Logo',  // 页头 Logo 描述
-          src: 'img/chicken.svg',  // Logo 地址
+          src: 'img/logo.svg',  // Logo 地址
           // srcDark: 'img/docusaurus_keytar.svg',
           // width: 32,
           // height: 32,
