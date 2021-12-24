@@ -24,9 +24,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/pokoai/Docusaurus/pokeai/',
+          // showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
-        // showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
         blog: {
           showReadingTime: false,
           // Please change this to your repo.
@@ -50,11 +50,18 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      hideableSidebar: true,
+      // 搜索栏
       algolia: {
         appId: 'IHADMADDLQ',
         apiKey: '2656c19069bdd85551b275601202758f',
         indexName: 'docusaurus',
         contextualSearch: true,
+      },
+      // TOC
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 5,
       },
       navbar: {
         title: '破壳Ai',  // 页头标题
@@ -90,12 +97,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             position: 'left',
             label: '运动>',
           },
-          // {
-          //   type: 'doc',
-          //   docId: 'finance/finance-intro',
-          //   position: 'left',
-          //   // label: '运动>',
-          // },
           {to: 'blog', label: '博客', position: 'right'},
           {to: 'about', label: '关于', position: 'right'},
           {

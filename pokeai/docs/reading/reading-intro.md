@@ -2,7 +2,7 @@
 title: 每天都要阅读
 slug: /reading
 sidebar_label: 看书能够节省生命
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 Hi there~
