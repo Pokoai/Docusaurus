@@ -4,31 +4,29 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'as a Programmer',
+    title: '好好学习',
     Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Never stop writing.
-        Languages are alcohol.
+        深刻贯彻 破壳Ai 终身学习、系统性学习思想，一切学习都是为了突破认知屏障
       </>
     ),
   },
   {
-    title: 'as a Player',
+    title: '努力工作',
     Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Never stop playing.
-        If not fun, why bother?
+        工作是个人发展过程中的一个跳板，控制工作，而非让工作奴役你
       </>
     ),
   },
   {
-    title: 'as a Man',
+    title: '健康很重要',
     Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Just give all my love to them.
+        最重要的地基，不用多说，又必须得多说。每天运动，从孩子抓起
       </>
     ),
   },

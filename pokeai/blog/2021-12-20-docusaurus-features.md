@@ -5,9 +5,9 @@ authors: guyue
 tags: [markdown 语法]
 ---
 
-> 参考：https://docusaurus.io/zh-CN/docs/markdown-features
-
 ## Markdown Frontmatter {#markdown-frontmatter}
+
+> 参考：https://docusaurus.io/zh-CN/docs/markdown-features
 
 Markdown documents can use the following Markdown FrontMatter metadata fields, enclosed by a line `---` on either side.
 

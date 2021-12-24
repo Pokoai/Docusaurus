@@ -4,7 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
-  title: 'Poke Ai',  // 站点标题
+  title: '破壳 Ai',  // 站点标题
   tagline: 'Focus - Keep things simple',  // 副标题
   url: 'https://pokeai.cn',   // 网站域名
   baseUrl: '/',
@@ -28,13 +28,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         // showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         blog: {
-          showReadingTime: true,
+          showReadingTime: false,
           // Please change this to your repo.
           editUrl:
             'https://github.com/pokoai/Docusaurus/pokeai/blog/',
           postsPerPage: 7,
           blogSidebarCount: 'ALL',
-          blogSidebarTitle: 'Recent posts',
+          blogSidebarTitle: '近期发布',
           feedOptions: {
             type: 'all',
             copyright: `Copyright © ${new Date().getFullYear()} Poke Ai, Inc.`,
@@ -90,6 +90,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             position: 'left',
             label: '运动>',
           },
+          // {
+          //   type: 'doc',
+          //   docId: 'finance/finance-intro',
+          //   position: 'left',
+          //   // label: '运动>',
+          // },
           {to: 'blog', label: '博客', position: 'right'},
           {to: 'about', label: '关于', position: 'right'},
           {
@@ -110,8 +116,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 to: 'docs/wiki',
               },
               {
-                label: '思考',   // aaaaaa,折腾了这么久，结果是label写成了lable
-                to: 'docs/thinking'
+                label: '理财',   // aaaaaa,折腾了这么久，结果是label写成了lable
+                to: 'docs/finance'
               },
             ],
           },

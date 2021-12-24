@@ -1,11 +1,5 @@
 guyue:
   name: Guyue
-  # title: Poke Ai
+  title: 大道至简
   url: https://pokeai.cn/about
   image_url: https://img.arctee.cn/qiniu_picgo/my-avatar.jpg
-
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
