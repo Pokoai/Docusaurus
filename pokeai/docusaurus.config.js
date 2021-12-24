@@ -81,15 +81,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           },
           {
             type: 'doc',
-            docId: 'thinking/thinking-intro',
-            position: 'left',
-            label: '思考?',
-          },
-          {
-            type: 'doc',
             docId: 'reading/reading-intro',
             position: 'left',
             label: '书斋~',
+          },
+          {
+            type: 'doc',
+            docId: 'thinking/thinking-intro',
+            position: 'left',
+            label: '思考?',
           },
           {
             type: 'doc',
