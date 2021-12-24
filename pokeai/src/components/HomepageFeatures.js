@@ -5,7 +5,7 @@ import styles from './HomepageFeatures.module.css';
 const FeatureList = [
   {
     title: '好好学习',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('../../static/img/undraw_freelancer_re_irh4.svg').default,
     description: (
       <>
         深刻贯彻 破壳Ai 终身学习、系统性学习思想，一切学习都是为了突破认知屏障
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: '努力工作',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('../../static/img/undraw_programming_re_kg9v.svg').default,
     description: (
       <>
         工作是个人发展过程中的一个跳板，控制工作，而非让工作奴役你
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: '健康很重要',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('../../static/img/undraw_healthy_habit_bh-5-w.svg').default,
     description: (
       <>
         最重要的地基，不用多说，又必须得多说。每天运动，从孩子抓起
