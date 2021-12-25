@@ -128,7 +128,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             items: [
               {
                 label: '联系我',
-                href: 'https://pokeai.cn/about',
+                href: 'https://pokeai.cn/about#:~:text=%E9%82%AE%E7%AE%B1%3Apokeai%40outlook.com',
               },
               {
                 label: 'GitHub',
