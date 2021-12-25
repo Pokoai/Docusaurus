@@ -23,8 +23,8 @@
 
 > 站点名称：破壳 Ai 
 > 
-> 站点地址：https://arctee.cn/
+> 站点地址：https://pokeai.cn/
 > 
 > 站点描述：打造个人知识库 
 > 
-> 站点图标：https://img.arctee.cn/qiniu_picgo/site-favicon.ico 
+> [站点图标获取](https://img.arctee.cn/picgo/pokeai-favicon.ico )
