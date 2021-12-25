@@ -100,7 +100,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           {to: 'blog', label: '博客', position: 'right'},
           {to: 'about', label: '关于', position: 'right'},
           {
-            href: 'https://waline-p1hwb9itf-pokoai.vercel.app',
+            href: 'https://waline-pokoai.vercel.app/',
             // to: 'discussion',
             label: '留言',
             position: 'right',
