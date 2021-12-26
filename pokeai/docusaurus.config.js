@@ -87,15 +87,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           },
           {
             type: 'doc',
-            docId: 'thinking/thinking-intro',
-            position: 'left',
-            label: '思考?',
-          },
-          {
-            type: 'doc',
             docId: 'exercise/exercise-intro',
             position: 'left',
             label: '运动>',
+          },
+          {
+            type: 'doc',
+            docId: 'thinking/thinking-intro',
+            position: 'left',
+            label: '思考?',
           },
           {to: 'blog', label: '博客', position: 'right'},
           {to: 'about', label: '关于', position: 'right'},
@@ -137,15 +137,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             ],
           },
           {
-            title: '友情链接',
+            title: '导航',
             items: [
               {
                 label: '博客',
                 to: '/blog',
-              },
-              {
-                label: 'Arctee',
-                href: 'https://arctee.cn',
               },
             ],
           },
