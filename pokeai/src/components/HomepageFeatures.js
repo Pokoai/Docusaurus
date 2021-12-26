@@ -22,7 +22,7 @@ const FeatureList = [
     ),
   },
   {
-    title: '健康很重要',
+    title: '每天运动',
     Svg: require('../../static/img/undraw_healthy_habit_bh-5-w.svg').default,
     description: (
       <>
