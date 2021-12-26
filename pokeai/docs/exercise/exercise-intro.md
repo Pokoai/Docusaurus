@@ -1,7 +1,7 @@
 ---
 title: 百日运动计划
-slug: /exercise
 sidebar_label: 开跑
+slug: /exercise
 sidebar_position: 1
 ---
 
