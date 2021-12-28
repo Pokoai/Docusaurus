@@ -1,8 +1,8 @@
 ---
-title: 花十年时间打造个人知识体系
+title: 花十年时间，打造个人知识库
 slug: /wiki
-sidebar_label: 花十年，打造个人知识库
-sidebar_position: 1
+sidebar_label: 首页
+sidebar_position: 0
 ---
 
 Hi there~

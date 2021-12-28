@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   tagline: 'Focus - Keep things simple',  // 副标题
   url: 'https://pokeai.cn',   // 网站域名
   baseUrl: '/',
-  onBrokenLinks: 'ignore',  // 暂时修改为 ignore ,为了 vercel 能够成功 build 该项目
+  onBrokenLinks: 'throw',  // 暂时修改为 ignore ,为了 vercel 能够成功 build 该项目
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',  // 站点图标
   organizationName: 'Pokoai', // Usually your GitHub org/user name.
@@ -20,12 +20,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          sidebarCollapsible: true, //默认折叠
           // path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/pokoai/Docusaurus/pokeai/',
           // showLastUpdateAuthor: true,
           showLastUpdateTime: true,
+          showLastUpdateAuthor: false,
         },
         blog: {
           showReadingTime: false,
@@ -37,6 +39,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           blogSidebarTitle: '近期发布',
           feedOptions: {
             type: 'all',
+            title: '破壳Ai', // default to siteConfig.title
+            description: '个人博客', // default to  `${siteConfig.title} Blog`
             copyright: `Copyright © ${new Date().getFullYear()} Poke Ai, Inc.`,
           },
         },
@@ -56,15 +60,23 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         appId: 'IHADMADDLQ',
         apiKey: '2656c19069bdd85551b275601202758f',
         indexName: 'docusaurus',
+        
+        // Optional: see doc section bellow
         contextualSearch: true,
+
+        // Optional: Algolia search parameters
+        searchParameters: {},
+
+        //... other Algolia params
       },
       // TOC
       tableOfContents: {
         minHeadingLevel: 2,
-        maxHeadingLevel: 5,
+        maxHeadingLevel: 4,
       },
       navbar: {
         title: '破壳Ai',  // 页头标题
+        hideOnScroll: false,
         logo: {
           alt: 'Poke Ai Logo',  // 页头 Logo 描述
           src: 'img/logo.svg',  // Logo 地址
@@ -103,6 +115,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             href: 'https://comment.pokeai.cn',
             // to: 'discussion',
             label: '留言',
+            position: 'right',
+          },
+          {
+            href: 'https://nav.pokeai.cn',
+            label: '导航站',
             position: 'right',
           },
         ],
