@@ -160,6 +160,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 label: '博客',
                 to: '/blog',
               },
+              {
+                label: '资源站',
+                href: 'https://source.pokeai.cn',
+              },
             ],
           },
         ],
