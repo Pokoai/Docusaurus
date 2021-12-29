@@ -119,7 +119,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           },
           {
             href: 'https://nav.pokeai.cn',
-            label: '导航站',
+            label: '信息站',
             position: 'right',
           },
         ],
