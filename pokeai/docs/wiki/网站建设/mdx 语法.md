@@ -1,9 +1,3 @@
----
-title: Docusaurus 重要语法记录
-slug: user-guides
-authors: guyue
-tags: [markdown 语法]
----
 
 ## Markdown Frontmatter {#markdown-frontmatter}
 
