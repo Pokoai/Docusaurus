@@ -103,14 +103,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             position: 'left',
             label: '运动>',
           },
-          {
-            type: 'doc',
-            docId: 'thinking/thinking-intro',
-            position: 'left',
-            label: '思考?',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'thinking/thinking-intro',
+          //   position: 'left',
+          //   label: '思考?',
+          // },
           {to: 'blog', label: '博客', position: 'right'},
-          {to: 'about', label: '关于', position: 'right'},
+          
           {
             href: 'https://comment.pokeai.cn',
             // to: 'discussion',
@@ -122,6 +122,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             label: '信息站',
             position: 'right',
           },
+          {to: 'about', label: '关于', position: 'right'},
         ],
       },
       footer: {
