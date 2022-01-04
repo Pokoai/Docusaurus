@@ -109,6 +109,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           //   position: 'left',
           //   label: '思考?',
           // },
+          {to: 'study-record', label: '学习志', position: 'left'},
           {to: 'blog', label: '博客', position: 'right'},
           
           {
