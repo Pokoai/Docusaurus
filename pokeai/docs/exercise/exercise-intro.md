@@ -1,6 +1,6 @@
 ---
 title: 百日运动计划
-sidebar_label: 开跑
+sidebar_label: 夯基
 slug: /exercise
 sidebar_position: 1
 ---

@@ -1,7 +1,7 @@
 ---
 title: 花十年时间，打造个人知识库
 slug: /wiki
-sidebar_label: 首页
+sidebar_label: 笔耕
 sidebar_position: 0
 ---
 

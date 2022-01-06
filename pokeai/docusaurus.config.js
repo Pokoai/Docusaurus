@@ -103,12 +103,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             position: 'left',
             label: '运动>',
           },
-          // {
-          //   type: 'doc',
-          //   docId: 'thinking/thinking-intro',
-          //   position: 'left',
-          //   label: '思考?',
-          // },
+          {
+            type: 'doc',
+            docId: 'thinking/thinking-intro',
+            position: 'left',
+            label: '思考?',
+          },
           {to: 'study-record', label: '学习志', position: 'left'},
           {to: 'blog', label: '博客', position: 'right'},
           
@@ -118,11 +118,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             label: '留言',
             position: 'right',
           },
-          {
-            href: 'https://nav.pokeai.cn',
-            label: '信息站',
-            position: 'right',
-          },
+          // {
+          //   href: 'https://nav.pokeai.cn',
+          //   label: '信息站',
+          //   position: 'right',
+          // },
           {to: 'about', label: '关于', position: 'right'},
         ],
       },
@@ -130,7 +130,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         style: 'dark',
         links: [
           {
-            title: '笔记',
+            title: '专栏',
             items: [
               {
                 label: '知识库',
@@ -158,9 +158,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           {
             title: '导航',
             items: [
+              // {
+              //   label: '博客',
+              //   to: '/blog',
+              // },
               {
-                label: '博客',
-                to: '/blog',
+                label: '信息站',
+                href: 'https://nav.pokeai.cn',
               },
               {
                 label: '资源站',
