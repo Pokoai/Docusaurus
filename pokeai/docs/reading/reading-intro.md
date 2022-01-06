@@ -1,7 +1,7 @@
 ---
-title: 每天都要阅读
+title: 读书能够节省生命 - 坚持每天阅读
 slug: /reading
-sidebar_label: 看书能够节省生命
+sidebar_label: 开卷
 sidebar_position: 0
 # hide_table_of_contents: true
 ---
