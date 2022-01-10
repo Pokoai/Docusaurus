@@ -7,6 +7,8 @@ sidebar_position: 1
 > 
 > 方便我自己查找和使用，建议大家直接阅读 [原文](https://github.com/renyuns/learngit)。
 
+> 待补充：https://blog.yanqingshan.com/52.html
+
 ## 常用命令
 
 ```bash
