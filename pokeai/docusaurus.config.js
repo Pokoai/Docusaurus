@@ -93,6 +93,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           },
           {
             type: 'doc',
+            docId: 'thinking/thinking-intro',
+            position: 'left',
+            label: '认知思维+',
+          },
+          {
+            type: 'doc',
             docId: 'reading/reading-intro',
             position: 'left',
             label: '书斋~',
@@ -102,12 +108,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             docId: 'exercise/exercise-intro',
             position: 'left',
             label: '运动>',
-          },
-          {
-            type: 'doc',
-            docId: 'thinking/thinking-intro',
-            position: 'left',
-            label: '思考?',
           },
           {to: 'study-record', label: '学习志', position: 'left'},
           {to: 'blog', label: '博客', position: 'right'},
