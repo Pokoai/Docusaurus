@@ -111,7 +111,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           },
           {
             type: 'doc',
-            docId: 'week-plan/weekplan-intro',
+            docId: 'week-plan/week-plan',
             position: 'left',
             label: 'week-plan',
           },
