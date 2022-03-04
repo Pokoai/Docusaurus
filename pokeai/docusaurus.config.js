@@ -109,12 +109,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             position: 'left',
             label: '运动>',
           },
-          {
-            type: 'doc',
-            docId: 'week-plan/week-plan',
-            position: 'left',
-            label: 'week-plan',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'week-plan/week-plan',
+          //   position: 'left',
+          //   label: 'week-plan',
+          // },
           // {to: 'study-record', label: '学习志', position: 'left'},
           {to: 'blog', label: '博客', position: 'right'},
           

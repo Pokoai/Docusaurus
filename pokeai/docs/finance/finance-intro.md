@@ -1,5 +1,5 @@
 ---
-title: 基金投资学习笔记
+title: 投资理财尽早开始
 slug: /finance
 sidebar_label: 首页
 sidebar_position: 1
