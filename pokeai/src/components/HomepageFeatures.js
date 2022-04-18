@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('../../static/img/undraw_programming_re_kg9v.svg').default,
     description: (
       <>
-        工作是个人发展过程中的一个跳板，控制工作，而非让工作奴役你
+        个人发展过程中的一个跳板，控制工作，而非让工作奴役你
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('../../static/img/undraw_healthy_habit_bh-5-w.svg').default,
     description: (
       <>
-        最重要的地基，不用多说，又必须得多说。每天运动，从孩子抓起
+        身体健康是最重要的地基，运动，从每天抓起
       </>
     ),
   },

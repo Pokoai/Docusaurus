@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-- C 语言实现
+> C 语言实现
 
 1. 定义数据结构
 
@@ -67,14 +67,87 @@ int Length(SqList L)
 
 这四步是定义一个新数据结构最基本的构成部分，有了这四个地基，就很容易将自定义的数据结构用起来了。
 
-后续我们要讲述的其他数据结构类型，都是按照这个模式来，我总结了一个口诀送给大家「初空满个，增删改查，取遍清」。
+后续我们要讲述的其他数据结构类型，都是按照这个模式来，我总结了一个口诀送给大家**「初空满个，增删改查，取遍清」**。
 
 - 增加元素
 
 ```C
 
+bool insert(SqList * L, int pos, ElemType e)
+{
+    // 数组已满
+    if (isFull(*L)) {
+        printf("数组已满！");
+        return false;
+    }
+        
+    // pos 异常检查
+    if (pos < 0 || pos > MAXSIZE-1) {
+        printf("插入位置异常！");
+        return false;
+    }
+
+    // 首先将后部分元素均往后移动一位
+    if (pos < L->length) { // 不包含最后一个位置
+        for (int i = L->length-1; i >= pos; i--) {
+            L->array[i+1] = L->array[i];
+        }
+    }
+    L->array[pos] = e; // 插入
+    
+    // 更新 length
+    L->length++;
+
+    return true;
+        
+}
+
 ```
 
-5. 取、遍、清
+- 删除
+
+```c
+
+// 删除指定位置的元素，存入 e 中
+bool delete(SqList * L, int pos, ElemType * e) 
+{
+    //数组为空异常
+    if( isEmpty(*L) ) {
+        puts( "数组为空！" );
+        return false;
+    }
+
+    //pos 异常处理
+    if( pos < 0 || pos >= L->length) {
+        puts("删除位置错误！");
+        return false;
+    }
+
+    //取出要删除的值
+    *e = L->array[pos];
+
+    //如果删除的是最后一个元素，就不用移动覆盖，直接 length 减一即可
+    if( pos != L->length - 1 ) {
+        for( int i = pos + 1; i < L->length; i++ ) {
+            L->array[i-1] = L->array[i];
+        }
+    }
+
+    L->length--;
+
+    return true;
+}
+
+```
+
+- 修改
+
+```
+
+1. 取、遍、清
+
+
+
+2. main 函数测试
 
 

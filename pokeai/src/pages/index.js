@@ -17,7 +17,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/about">
-            君子修身养德，不以穷困而改志
+            见贤思齐，能者为师
           </Link>
         </div>
       </div>
