@@ -272,6 +272,21 @@ $ git rm <file>
 
 ```
 
+### 9. 删除已提交的文件夹
+
+在 github 上只能删除仓库，却无法删除文件夹或文件, 所以只能通过命令来解决
+
+```bash
+
+$ git pull origin main    # 将远程仓库里面的项目拉下来
+
+$ git rm -r --cached .idea   # 删除 .idea 文件夹
+$ git commit -m '删除.idea'  # 提交，添加操作说明
+
+$ git push -u origin main    # 将本次更改更新到 github 项目上去
+
+```
+
 ### 10. 其他命令
 
 ```bash
