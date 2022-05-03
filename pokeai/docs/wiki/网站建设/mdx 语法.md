@@ -3,6 +3,8 @@
 
 > 参考：https://docusaurus.io/zh-CN/docs/markdown-features
 
+[Markdown 官方教程](https://markdown.com.cn/)
+
 Markdown documents can use the following Markdown FrontMatter metadata fields, enclosed by a line `---` on either side.
 
 <!--truncate-->

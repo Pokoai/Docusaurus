@@ -141,7 +141,7 @@ _高清版的动画请见[合并中间提交段动画-高清.gif 提取码：MI8
     
 3.  修改完成后，退出交互式界面（vim输入 `:wq` 保存并退出），然后按照交互式界面中设定好的命令顺序进行 rebase 操作；
     
-**注意：[git rebase合并多次commit及可能遇到的问题](/pokeai/docs/wiki/Git/Git%20rebase%E5%90%88%E5%B9%B6%E5%A4%9A%E6%AC%A1commit%E5%8F%8A%E5%8F%AF%E8%83%BD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98.md)**
+**注意：[git rebase合并多次commit及可能遇到的问题](/docs/wiki/Git/Git%20rebase%E5%90%88%E5%B9%B6%E5%A4%9A%E6%AC%A1commit%E5%8F%8A%E5%8F%AF%E8%83%BD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98.md)**
 
 
 ## 相关文章
