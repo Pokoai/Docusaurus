@@ -102,6 +102,9 @@ git config --list --show-origin #查看所有的配置以及它们所在的文�
 
 ```bash
 
+$ cat <file>    # 显示文件内容,如: cat readme.txt 就是在 git bash 中显示该文件内容
+$ cd ~          # 进入用户主目录
+
 (所有命令都在 Git Bash 中运行)
 $ git                           查看 git 的相关命令 (git --help)
 $ git --version                 查看 git 的版本
@@ -110,8 +113,7 @@ $ git pull origin develop       从远程(origin) 的 develop 分支拉取代码
 
 ```
 
-
-### 1. 初始化本地仓库: 在 Git Bash 中输入对应的命令
+### 1. 初始化本地仓库
 
 
 ```bash
@@ -158,9 +160,9 @@ git commit --amend
 ​
 ```bash
 
-git add -A 提交所有变化
-git add -u 提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)
-git add . 提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件
+git add -A   # 提交所有变化
+git add -u   # 提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)
+git add .    # 提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件
 
 ```
 
@@ -172,7 +174,7 @@ $ git status
 
 ```
 
-### 4. 查看修改内容,查看文件不同 (difference)
+### 4. 查看修改内容，查看文件不同 (difference)
 
 ```bash
 
@@ -231,7 +233,7 @@ git push -f -u origin main
 
 ### 8. 撤销修改
 
-#### - 丢弃工作区 (Working Directory) 的修改
+- 丢弃工作区 (Working Directory) 的修改
 
 ```bash
 
@@ -241,7 +243,7 @@ $ git checkout -- <file>
 
 ```
 
-#### - 丢弃暂存区 (stage/index) 的修改
+- 丢弃暂存区 (stage/index) 的修改
 
 ```bash
 
@@ -253,7 +255,7 @@ $ git restore <file>
 
 ```
 
-#### - 小结
+- 小结
 
 > - 当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令`git restore <file>`。
 > - 当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令`git restore --staged <file>`，就回到了场景1，第二步按场景1操作。
@@ -272,9 +274,9 @@ $ git rm <file>
 
 ```
 
-### 9. 删除已提交的文件夹
+### 10. 删除已提交的文件夹
 
-在 github 上只能删除仓库，却无法删除文件夹或文件, 所以只能通过命令来解决
+在 GitHub 上只能删除仓库，却无法删除文件夹或文件, 所以只能通过命令来解决
 
 ```bash
 
@@ -287,17 +289,7 @@ $ git push -u origin main    # 将本次更改更新到 github 项目上去
 
 ```
 
-### 10. 其他命令
-
-```bash
-
-$ cat <file>    显示文件内容,如: cat readme.txt 就是在 git bash 中显示该文件内容
-$ cd ~         进入用户主目录
-$ open ~/.ssh  Mac 打开存放 ssh 文件夹
-
-```
-
-## 五、远程仓库 :
+## 五、远程仓库
 
 ### 1. [创建 SSH Key](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key)
 
@@ -316,7 +308,9 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 
 > 如果一切顺利的话，可以在用户主目录里找到.ssh目录，里面有 id_rsa 和 id_rsa.pub 两个文件，这两个就是 SSH Key 的秘钥对，id_rsa 是私钥，不能泄露出去，id_rsa.pub 是公钥，可以放心地告诉任何人。
 
-### 2. 登录 GitHub ,在 Settings 中找到 SSH 设置项中添加新的 SSH Key,设置任意 title,在 Key 文本框里粘贴 id_rsa.pub 文件的内容
+### 2. 添加 SSH Key
+
+登录 GitHub，在 Settings 中找到 SSH 设置项中添加新的 SSH Key，设置任意 title，在 Key 文本框里粘贴 id_rsa.pub 文件的内容。
 
 ```bash
 
@@ -341,13 +335,15 @@ $ git remote add origin git@github.com:renyuns/learngit.git
 
 ### 4. 推送到远程仓库
 
+详细参见：[将本地文件推送到 GitHub 上](/pokeai/docs/wiki/Git/将本地文件推送到%20GitHub%20上.md)
+
 ```bash
 
 $ git remote       #查看远程库信息
 $ git remote -v    #查看远程库详细信息
 $ git remote rm origin  #删除已关联的远程库 origin
 $ git push -u origin main    #第一次推送，否则不需要添加 -u 参数
-$ git push origin main      #推送本地 master 分支到远程库
+$ git push origin main      #推送本地 main 分支到远程库
 $ git push origin dev         #推送本地 dev 分支到远程库
 
 # 一个本地库关联多个远程库，例如同时关联 GitHub 和 Gitee:
@@ -364,7 +360,7 @@ $ git push gitee main
 
 ```
 
-> 加上了-u参数，Git 不但会把本地的 master 分支内容推送的远程新的 master 分支，还会把本地的 master 分支和远程的master分支关联起来
+> 加上了-u参数，Git 不但会把本地的 main 分支内容推送到远程新的 main 分支，还会把本地的 main 分支和远程的 main 分支关联起来
 
 ### 5. 从远程仓库克隆 (先有远程库)
 
@@ -375,9 +371,8 @@ $ git clone git@github.com:renyuns/gitskills.git
 
 ```
 
-> 一般建议先在 Github 上创建远程仓库，然后再克隆到本地使用。下图展示了新建远程仓库后的下一步骤：
+> 一般建议先在 Github 上创建远程仓库，然后再克隆到本地使用。
 
-![](https://github.com/adairhu/git-skills/blob/main/1.png?raw=true#crop=0&crop=0&crop=1&crop=1&from=url&id=J8ezE&margin=%5Bobject%20Object%5D&originHeight=713&originWidth=1230&originalType=binary&ratio=2&rotation=0&showTitle=false&status=done&style=none&title=)
 
 ## 六、分支
 
@@ -446,10 +441,10 @@ $ git push origin :refs/tags/v0.9
 ## 八、相关工具及网站
 
 1. [Git 官网](https://git-scm.com/)
-1. [GitHub-开源协作社区](https://github.com/)
-1. [Gitee(码云)-国内开源协作社区](https://gitee.com/)
-1. [廖雪峰的 Git 教程-新手必看](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
-1. [15 分钟学会 Git](https://try.github.io/levels/1/challenges/1)
-1. [Git Book](https://git-scm.com/book/zh/v2)
-1. [.gitignore  模板](https://github.com/github/gitignore)
-1. [自动生成 .gitignore](https://www.toptal.com/developers/gitignore)
+2. [GitHub-开源协作社区](https://github.com/)
+3. [Gitee(码云)-国内开源协作社区](https://gitee.com/)
+4. [廖雪峰的 Git 教程-新手必看](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+5. [15 分钟学会 Git](https://try.github.io/levels/1/challenges/1)
+6. [Git Book](https://git-scm.com/book/zh/v2)
+7. [.gitignore  模板](https://github.com/github/gitignore)
+8. [自动生成 .gitignore](https://www.toptal.com/developers/gitignore)
