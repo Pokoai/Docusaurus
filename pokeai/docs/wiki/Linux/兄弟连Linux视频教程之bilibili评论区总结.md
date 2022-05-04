@@ -32,7 +32,7 @@ sidebar_position: 1
 
 - [课件](https://www.aliyundrive.com/s/hXoYzkkLgX6)
   
-- [笔记]() 后续更新
+- 笔记: 后续更新
 
 
 ### 缺失视频补充
