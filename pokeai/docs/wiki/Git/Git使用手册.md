@@ -335,7 +335,7 @@ $ git remote add origin git@github.com:renyuns/learngit.git
 
 ### 4. 推送到远程仓库
 
-详细参见：[将本地文件推送到 GitHub 上](/docs/wiki/Git/%E5%B0%86%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E6%8E%A8%E9%80%81%E5%88%B0GitHub%E4%B8%8A)
+详细参见：[将本地文件推送到 GitHub 上](/docs/wiki/Git/将本地文件推送到GitHub上方法总结)
 
 ```bash
 

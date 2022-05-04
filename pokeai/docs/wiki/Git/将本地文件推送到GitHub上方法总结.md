@@ -7,9 +7,9 @@ sidebar_position: 2
 
 ## 一、本地不存在该仓库，而 GitHub 上已有该仓库
 
-**1、先在本地创建一个空的文件夹（如 Test ），用来放从GitHub上克隆下来的 repository。**
+**1、先在本地创建一个空的文件夹（如 Test ），用来放从 GitHub 上克隆下来的 repository。**
 
- 【注】：将相应的项目克隆到本地，由于要克隆的项目已经自带有 .git 目录，所以无需进行 git init 来初始化。若是在本地新建的仓库项目，则需要 git init 进行初始化。
+【注】：将相应的项目克隆到本地，由于要克隆的项目已经自带有 .git 目录，所以无需进行 git init 来初始化。若是在本地新建的仓库项目，则需要 git init 进行初始化。
 
 ```
 mkdir Test            # 为将要进行Git管理的项目建立新的文件夹
@@ -24,7 +24,7 @@ cd Test               # 进入新建的文件夹
 git clone https://github.com/username/hello-world.git   #将 GitHub 上的对应仓库克隆到本地
 ```
 
-**3、克隆到本地之后便可以在本地进行编辑修改，再推送到GitHub上即可。在本地编辑、查看与推送操作如下：**
+**3、克隆到本地之后便可以在本地进行编辑修改，再推送到 GitHub 上即可。在本地编辑、查看与推送操作如下：**
 
 ```
 cd hello-world                  #进入到在GitHub上所创建的repository中，（已经拷贝到本地的）
@@ -45,22 +45,22 @@ git push                        #将本地仓库的更新，推送到GitHub上�
 
 ![](https://img.arctee.cn/one/202205040319024.png)
 
-2、进入到本地仓库中，并用 `git init` 来对本地的仓库进行初始化
+**2、进入到本地仓库中，并用 `git init` 来对本地的仓库进行初始化**
 
 ```
 cd  Test          #进入到本地需要管理的项目目录中
 git init          #初始化需要管理的目录，使其能够被 Git 进行管理
 ``` 
 
-3、使用 `git remote add` 命令，来设置本地的远程仓库
+**3、使用 `git remote add` 命令，来设置本地的远程仓库**
 
-**执行git remote add命令之后，Git 会自动将 https://github.com/username/git-tutorial.git 远程仓库的名称设置为origin（标识符）**
+执行git remote add命令之后，Git 会自动将 https://github.com/username/git-tutorial.git 远程仓库的名称设置为origin（标识符）
 
 ```
 git remote add origin https://github.com/username/git-tutorial.git  #将其设置成本地的远程仓库
 ```
 
-4、将所有改动的内容提交到暂存区并保存
+**4、将所有改动的内容提交到暂存区并保存**
 
 ```
 git add .                        #把工作时的所有变化提交到暂存区，不包括删除的文件
@@ -69,7 +69,7 @@ git commit -m "Initial commit"   #保存变化，并添加注释
 
 【注】：本地仓库的内容推送到远程仓库之前，必须要将本地仓库中的内容提交到相应的分支中，否则该分支的内容将不会被推送到远程仓库中，而只是在远程仓库中建立了相应的分支而已。
 
-5、将当前分支下本地仓库中的内容推送至远程仓库中。分为两种情况：main 分支、其它子分支
+**5、将当前分支下本地仓库中的内容推送至远程仓库中。分为两种情况：main 分支、其它子分支**
 
 （1）、将 main 分支的本地仓库内容推送到远程仓库中(此时该远程仓库中还没有 main 分支，只是一个空仓库)
 
@@ -80,7 +80,7 @@ git push -u origin master      #将本地仓库的master分支，推送到远程
                               #（注：只用于首次推送时将远端master设置为当前仓库的上游，以后再推送直接 git push即可）
 ```
 
- 【注】：执行以上操作后，当前分支的内容就会被推送给远程仓库 origin 的 master 分支。\-u 参数可以在推送的同时，将 origin 仓库的master 分支设置为本地仓库当前分支的 upstream（上游）。添加了这个参数，将来运行**git pull**命令从远程仓库获取内容时，本地仓库的这个分支就可以直接从 origin 的master 分支获取内容，省去了另外添加参数的麻烦。若没有 \-u 这个参数，则在后面的 **git pull** 时，就需要指明拉取的是那一条分支，如：git pull origin f03 ,表示拉取的是远程的 f03 分支：origin/f03
+【注】：执行以上操作后，当前分支的内容就会被推送给远程仓库 origin 的 master 分支。\-u 参数可以在推送的同时，将 origin 仓库的master 分支设置为本地仓库当前分支的 upstream（上游）。添加了这个参数，将来运行**git pull**命令从远程仓库获取内容时，本地仓库的这个分支就可以直接从 origin 的master 分支获取内容，省去了另外添加参数的麻烦。若没有 \-u 这个参数，则在后面的 **git pull** 时，就需要指明拉取的是哪一条分支，如：git pull origin f03 ,表示拉取的是远程的 f03 分支：origin/f03
 
 （2）、将本地的其它子分支推送至 main 以外的分支，如将本地的 feature-D 分支以同名的形式推送至远程仓库（此时远程仓库中并没有 feature-D 分支）
 
@@ -89,11 +89,11 @@ git checkout -b feature-D        #在本地新建feature-D分支，并切换到�
 git push -u origin feature-D     #将feature-D推送至GitHub上,并保持该分支名称不变
 ```
 
-## 三、在本地和GitHub上都已经存在该仓库
+## 三、在本地和 GitHub 上都已经存在该仓库
 
-1、在本地和远程的GitHub上都已经存在该仓库，则在本地和GitHub上都不需要再重新创建该仓库了。只需要先将本地和远程的仓库之间创建联系。将本地GitHub上的该远程仓库设置为本地仓库的远程端。
+1、在本地和远程的 GitHub 上都已经存在该仓库，则在本地和 GitHub 上都不需要再重新创建该仓库了。只需要先将本地和远程的仓库之间创建联系。将本地 GitHub 上的该远程仓库设置为本地仓库的远程端。
 
-2、具体操作如下
+2、具体操作如下:
 
 ```
 cd  Test
