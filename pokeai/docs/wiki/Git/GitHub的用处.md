@@ -9,6 +9,8 @@ sidebar_position: 10
 
 :::
 
+> 参考：[怎样使用 GitHub？文科妹子写的 Github 入门教程](https://juejin.cn/post/6844903428053811208)
+
 ## 1 寻找资料
 ## 
 ### - 搜索技巧

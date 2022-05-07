@@ -440,11 +440,12 @@ $ git push origin :refs/tags/v0.9
 
 ## 八、相关工具及网站
 
-1. [Git 官网](https://git-scm.com/)
-2. [GitHub-开源协作社区](https://github.com/)
-3. [Gitee(码云)-国内开源协作社区](https://gitee.com/)
-4. [廖雪峰的 Git 教程-新手必看](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
-5. [15 分钟学会 Git](https://try.github.io/levels/1/challenges/1)
-6. [Git Book](https://git-scm.com/book/zh/v2)
-7. [.gitignore  模板](https://github.com/github/gitignore)
-8. [自动生成 .gitignore](https://www.toptal.com/developers/gitignore)
+1. [15 分钟学会 Git](https://try.github.io/levels/1/challenges/1)
+2. [廖雪峰的 Git 教程-新手必看](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+3. [Git Book](https://git-scm.com/book/zh/v2)
+4. [Git Handbook](https://docs.github.com/cn/get-started/using-git/about-git)
+5. [Git 官网](https://git-scm.com/)
+6. [GitHub-开源协作社区](https://github.com/)
+7. [Gitee(码云)-国内开源协作社区](https://gitee.com/)
+8. [.gitignore  模板](https://github.com/github/gitignore)
+9.  [自动生成 .gitignore](https://www.toptal.com/developers/gitignore)

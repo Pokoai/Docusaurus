@@ -69,7 +69,7 @@ collect2: error: ld returned 1 exit status
 
 ```
 
-这明摆着就是 a 被重定义了，那static的第一个作用就开始展示出来了，如果我们在上面 val.h 的 a 定义前加入 static 变量，他就能编译通过了。
+这明摆着就是 a 被重定义了，那 static 的第一个作用就开始展示出来了，如果我们在上面 val.h 的 a 定义前加入 static 变量，他就能编译通过了。
 
 ```c
 /* val.h */
