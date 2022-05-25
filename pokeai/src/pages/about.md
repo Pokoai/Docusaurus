@@ -8,7 +8,7 @@
 
 ## 联系
 
-- 邮箱：pokeai@outlook.com
+- 邮箱：me@pokeai.cn
 
 ## 格言
 
