@@ -8,6 +8,7 @@
 
 ## 联系
 
+- [微信公众号：破壳Ai](https://img.arctee.cn/one/pokeai-wechat.png)
 - 邮箱：me@pokeai.cn
 
 ## 格言
