@@ -10,13 +10,13 @@ sidebar_position: 2
 
 ## 分析
 
-在 Ubuntu 界面上可以看见一个虚拟光盘：VMware Tools，实际上就是没有安装该辅助工具导致的。
+在 Ubuntu 界面上可以看见一个虚拟光驱：VMware Tools，实际上就是没有安装该辅助工具导致的。
 
 如果没有看到 VMWare Tools，可以自己重新挂载到 Ubuntu 上，然后进行安装操作。
 
 ## 解决
 
-### 挂载 VMWare Tools 虚拟光盘（可选项）
+### 挂载 VMWare Tools 虚拟光驱（可选项）
 
 点击 VMware 的「虚拟机」菜单，找到 「安装VMware Tools」，点击安装即可。
 
@@ -28,15 +28,15 @@ sidebar_position: 2
 
 我这里采用的是命令行安装方式，因为我喜欢命令行的操作。如果是新手，平时接触 Linux 不多，也可以把这当作学习 Linux 命令行的实践。（关于如何学习 Linux 的操作，后续有时间我会出一篇详细新手教程，进度随大家反馈热度而定）
 
-1. 进入 VMware Tools 目录
+#### 进入 VMware Tools 文件夹
 
 如果是界面化操作，直接从桌面上双击就 OK 了。
 
 ![](https://img.arctee.cn/one/202205271210370.png)
 
-但是采用命令行操作的话，需要先找打该虚拟光盘挂载在哪个文件目录下（挂载等名词目前不懂没关系，可直接忽略我的文字说明，直接根据截图操作）。
+但是采用命令行操作的话，需要先找打该虚拟光驱挂载在哪个文件目录下（挂载等名词目前不懂没关系，可直接忽略我的文字说明，直接根据截图操作）。
 
-- 打开 Terminal，寻找挂载目录
+**1. 打开 Terminal，寻找挂载目录**
   
 ```bash
 ls
@@ -87,12 +87,12 @@ ls
 cd csto
 
 ls
-## 哈哈哈，终于找到啦
+## 终于找到了
 ```
 
 ![](https://img.arctee.cn/one/202205271234195.png)
 
-- 进入虚拟光盘
+**2. 进入虚拟光驱**
 
 ```bash
 cd VMware\ Tools/
@@ -101,9 +101,9 @@ ls
 ```
 `VMwareTools-10.3.23-16594550.tar.gz` 这个文件就是我们后续需要安装的。
 
-2. 解压 VMware Tools
+#### 解压 VMware Tools
 
-- 先解压
+**1. 先解压**
 
 ```bash 
 tar -xvzf VMwareTools-10.3.23-16594550.tar.gz
@@ -158,7 +158,7 @@ touch file
 
 那么好办，我们只要**将该文件拷贝到其他目录下（比如用户根目录）然后更改权限再解压即可**。
 
-- 拷贝到 /home/csto
+**2. 拷贝到 /home/csto**
   
 ```bash
 cp VMwareTools-10.3.23-16594550.tar.gz /home/csto
@@ -168,7 +168,7 @@ tar -xzvf VMwareTools-10.3.23-16594550.tar.gz /home/csto
 
 ![](https://img.arctee.cn/one/202205271317504.png)
 
-- 更改文件权限
+**3. 更改文件权限**
 
 ```bash
 chmod -R 777 VMwareTools-10.3.23-16594550.tar.gz /home/csto
@@ -176,7 +176,7 @@ chmod -R 777 VMwareTools-10.3.23-16594550.tar.gz /home/csto
 
 ![](https://img.arctee.cn/one/202205271318429.png)
 
-- 开始解压
+**4. 开始解压**
 
 ```bash
 tar -xzvf VMwareTools-10.3.23-16594550.tar.gz /home/csto
@@ -186,7 +186,7 @@ tar -xzvf VMwareTools-10.3.23-16594550.tar.gz /home/csto
 
 解压完得到 vmware-tools-distrib 文件夹，安装文件就在这里面了。
 
-3. 最后一步：正式安装
+#### 最后一步：正式安装
 
 ![](https://img.arctee.cn/one/202205271324941.png)
 
@@ -215,7 +215,7 @@ sudo ./vmware-install.pl
 
 ![](https://img.arctee.cn/one/202205271332707.png)
 
-4. 安装完成
+#### 安装完成
 
 ![](https://img.arctee.cn/one/202205271337654.png)
 
@@ -228,4 +228,5 @@ sudo ./vmware-install.pl
 ```bash
 reboot
 ```
+
 **问题解决，大功告成。**
