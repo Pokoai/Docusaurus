@@ -28,7 +28,7 @@ sidebar_position: 2
 
 我这里采用的是命令行安装方式，因为我喜欢命令行的操作。如果是新手，平时接触 Linux 不多，也可以把这当作学习 Linux 命令行的实践。（关于如何学习 Linux 的操作，后续有时间我会出一篇详细新手教程，进度随大家反馈热度而定）
 
-#### 进入 VMware Tools 文件夹
+#### 一、进入 VMware Tools 挂载目录
 
 如果是界面化操作，直接从桌面上双击就 OK 了。
 
@@ -101,7 +101,7 @@ ls
 ```
 `VMwareTools-10.3.23-16594550.tar.gz` 这个文件就是我们后续需要安装的。
 
-#### 解压 VMware Tools
+#### 二、解压 VMware Tools 压缩包
 
 **1. 先解压**
 
@@ -186,7 +186,7 @@ tar -xzvf VMwareTools-10.3.23-16594550.tar.gz /home/csto
 
 解压完得到 vmware-tools-distrib 文件夹，安装文件就在这里面了。
 
-#### 最后一步：正式安装
+#### 三、最后一步：正式安装
 
 ![](https://img.arctee.cn/one/202205271324941.png)
 
@@ -215,7 +215,7 @@ sudo ./vmware-install.pl
 
 ![](https://img.arctee.cn/one/202205271332707.png)
 
-#### 安装完成
+#### 四、安装完成
 
 ![](https://img.arctee.cn/one/202205271337654.png)
 
