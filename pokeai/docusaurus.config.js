@@ -103,12 +103,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             position: 'left',
             label: '书斋~',
           },
-          {
-            type: 'doc',
-            docId: 'exercise/exercise-intro',
-            position: 'left',
-            label: '运动>',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'exercise/exercise-intro',
+          //   position: 'left',
+          //   label: '运动>',
+          // },
           // {
           //   type: 'doc',
           //   docId: 'week-plan/week-plan',
@@ -116,7 +116,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           //   label: 'week-plan',
           // },
           // {to: 'study-record', label: '学习志', position: 'left'},
-          {to: 'blog', label: '博客', position: 'right'},
+          // {to: 'blog', label: '博客', position: 'right'},  // 使用第三方平台，与人交流
           
           {
             href: 'https://comment.pokeai.cn',
@@ -129,7 +129,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           //   label: '信息站',
           //   position: 'right',
           // },
-          {to: 'about', label: '关于', position: 'right'},
+          // {to: 'about', label: '关于', position: 'right'},
         ],
       },
       footer: {
@@ -138,10 +138,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           {
             title: '专栏',
             items: [
-              {
-                label: '知识库',
-                to: 'docs/wiki',
-              },
+              // { 
+              //   label: '知识库',
+              //   to: 'docs/wiki',
+              // },
               {
                 label: '理财',   // aaaaaa,折腾了这么久，结果是label写成了lable
                 to: 'docs/finance'
