@@ -17,7 +17,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/about">
-            见贤思齐，能者为师
+            慢即是快，欲速则不达
           </Link>
         </div>
       </div>

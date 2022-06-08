@@ -4,7 +4,7 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: '好好学习',
+    title: '高效学习',
     Svg: require('../../static/img/undraw_freelancer_re_irh4.svg').default,
     description: (
       <>
