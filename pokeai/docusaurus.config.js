@@ -146,6 +146,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 label: '理财',   // aaaaaa,折腾了这么久，结果是label写成了lable
                 to: 'docs/finance'
               },
+              {
+                label: '副业',
+                to: 'docs/sideline'
+              },
             ],
           },
           {
