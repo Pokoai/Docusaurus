@@ -94,7 +94,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           {
             type: 'doc',
             docId: 'thinking/thinking-intro',
-            position: 'left'
+            position: 'left',
             label: '认知提升+',
           },
           {
