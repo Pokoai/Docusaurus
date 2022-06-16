@@ -2,7 +2,7 @@
 title: 投资理财尽早开始
 slug: /finance
 sidebar_label: 首页
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 Hi there~
