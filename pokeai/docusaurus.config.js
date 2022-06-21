@@ -20,7 +20,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarCollapsible: true, //默认折叠
+          sidebarCollapsible: false, //默认折叠
           // path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
