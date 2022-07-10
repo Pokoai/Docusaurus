@@ -103,12 +103,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           //   position: 'left',
           //   label: '书斋~',
           // },
-          {
-            type: 'doc',
-            docId: 'health/health-intro',
-            position: 'left',
-            label: '健康>',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'health/health-intro',
+          //   position: 'left',
+          //   label: '健康>',
+          // },
           // {
           //   type: 'doc',
           //   docId: 'week-plan/week-plan',
