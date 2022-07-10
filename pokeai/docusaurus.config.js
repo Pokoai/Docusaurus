@@ -95,14 +95,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             type: 'doc',
             docId: 'thinking/thinking-intro',
             position: 'left',
-            label: '认知提升+',
+            label: '自我提升+',
           },
-          {
-            type: 'doc',
-            docId: 'reading/reading-intro',
-            position: 'left',
-            label: '书斋~',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'reading/reading-intro',
+          //   position: 'left',
+          //   label: '书斋~',
+          // },
           {
             type: 'doc',
             docId: 'health/health-intro',
@@ -142,10 +142,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               //   label: '知识库',
               //   to: 'docs/wiki',
               // },
-              {
-                label: '理财',   // aaaaaa,折腾了这么久，结果是label写成了lable
-                to: 'docs/finance'
-              },
+              // {
+              //   label: '理财',   // aaaaaa,折腾了这么久，结果是label写成了lable
+              //   to: 'docs/finance'
+              // },
               // {
               //   label: '副业',
               //   to: 'docs/sideline'
