@@ -91,12 +91,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             position: 'left',
             label: '知识库&',
           },
-          {
-            type: 'doc',
-            docId: 'thinking/thinking-intro',
-            position: 'left',
-            label: '自我提升+',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'thinking/thinking-intro',
+          //   position: 'left',
+          //   label: '自我提升+',
+          // },
           // {
           //   type: 'doc',
           //   docId: 'reading/reading-intro',
