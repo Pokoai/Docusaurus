@@ -85,12 +85,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           // height: 32,
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'wiki/wiki-intro',
-            position: 'left',
-            label: '知识库',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'wiki/wiki-intro',
+          //   position: 'left',
+          //   label: '知识库',
+          // },
           {
               type: 'doc',
               docId: 'finance/finance-intro',
@@ -123,12 +123,22 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           // },
           // {to: 'study-record', label: '学习志', position: 'left'},
           // {to: 'blog', label: '博客', position: 'right'},  // 使用第三方平台，与人交流
-          
+          {
+            href: 'https://pokeai.cn',
+            label: '博客',
+            position: 'right',
+          },
           {
             href: 'https://comment.pokeai.cn',
             // to: 'discussion',
             label: '留言',
             position: 'right',
+          },
+          {
+            type: 'doc',
+            docId: 'wiki/wiki-intro',
+            position: 'right',
+            label: '归档',
           },
           // {
           //   href: 'https://nav.pokeai.cn',
@@ -138,8 +148,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           // {to: 'about', label: '关于', position: 'right'},
         ],
       },
-      footer: {
-        style: 'dark',
+      // footer: {
+      //   style: 'dark',
         // links: [
         //   {
         //     title: '专栏',
@@ -189,8 +199,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         //     ],
         //   },
         // ],
-        copyright: `Copyright © ${new Date().getFullYear()} Poke Ai, Inc. Built with Docusaurus.`,
-      },
+      //   copyright: `Copyright © ${new Date().getFullYear()} Poke Ai, Inc. Built with Docusaurus.`,
+      // },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
