@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 (module.exports = {
   title: '破壳 Ai',  // 站点标题
   tagline: 'Focus - Keep things simple',  // 副标题
-  url: 'https://pokeai.cn',   // 网站域名
+  url: 'https://wiki.pokeai.cn',   // 网站域名
   baseUrl: '/',
   onBrokenLinks: 'ignore',  // 暂时修改为 ignore ,为了 vercel 能够成功 build 该项目
   onBrokenMarkdownLinks: 'warn',

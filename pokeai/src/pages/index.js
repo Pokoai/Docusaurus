@@ -16,8 +16,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/about">
-            慢即是快，欲速则不达
+            to="https://pokeai.cn">
+            专注当下，欲速则不达
           </Link>
         </div>
       </div>
