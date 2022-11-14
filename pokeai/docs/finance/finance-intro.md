@@ -1,7 +1,7 @@
 ---
-title: 个人投资学习笔记
+title: 打造个人投资系统
 slug: /finance
-sidebar_label: 首页
+sidebar_label: 前言
 sidebar_position: 0
 ---
 
