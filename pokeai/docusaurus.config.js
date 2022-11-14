@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 (module.exports = {
   title: '破壳 Ai',  // 站点标题
   tagline: 'Focus - Keep things simple',  // 副标题
-  url: 'https://wiki.pokeai.cn',   // 网站域名
+  url: 'https://pokeai.cn',   // 网站域名
   baseUrl: '/',
   onBrokenLinks: 'ignore',  // 暂时修改为 ignore ,为了 vercel 能够成功 build 该项目
   onBrokenMarkdownLinks: 'warn',
@@ -140,55 +140,55 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: '专栏',
-            items: [
-              // { 
-              //   label: '知识库',
-              //   to: 'docs/wiki',
-              // },
-              // {
-              //   label: '理财',   // aaaaaa,折腾了这么久，结果是label写成了lable
-              //   to: 'docs/finance'
-              // },
-              // {
-              //   label: '副业',
-              //   to: 'docs/sideline'
-              // },
-            ],
-          },
-          {
-            title: '社交媒体',
-            items: [
-              {
-                label: '联系我',
-                href: 'https://pokeai.cn/about#:~:text=%E9%82%AE%E7%AE%B1%3Apokeai%40outlook.com',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/Pokoai/Docusaurus',
-              },
-            ],
-          },
-          {
-            title: '导航',
-            items: [
-              // {
-              //   label: '博客',
-              //   to: '/blog',
-              // },
-              {
-                label: '信息站',
-                href: 'https://nav.pokeai.cn',
-              },
-              {
-                label: '资源站',
-                href: 'https://source.pokeai.cn',
-              },
-            ],
-          },
-        ],
+        // links: [
+        //   {
+        //     title: '专栏',
+        //     items: [
+        //       // { 
+        //       //   label: '知识库',
+        //       //   to: 'docs/wiki',
+        //       // },
+        //       // {
+        //       //   label: '理财',   // aaaaaa,折腾了这么久，结果是label写成了lable
+        //       //   to: 'docs/finance'
+        //       // },
+        //       // {
+        //       //   label: '副业',
+        //       //   to: 'docs/sideline'
+        //       // },
+        //     ],
+        //   },
+        //   {
+        //     title: '社交媒体',
+        //     items: [
+        //       {
+        //         label: '联系我',
+        //         href: 'https://pokeai.cn/about#:~:text=%E9%82%AE%E7%AE%B1%3Apokeai%40outlook.com',
+        //       },
+        //       {
+        //         label: 'GitHub',
+        //         href: 'https://github.com/Pokoai/Docusaurus',
+        //       },
+        //     ],
+        //   },
+        //   {
+        //     title: '导航',
+        //     items: [
+        //       // {
+        //       //   label: '博客',
+        //       //   to: '/blog',
+        //       // },
+        //       {
+        //         label: '信息站',
+        //         href: 'https://nav.pokeai.cn',
+        //       },
+        //       {
+        //         label: '资源站',
+        //         href: 'https://source.pokeai.cn',
+        //       },
+        //     ],
+        //   },
+        // ],
         copyright: `Copyright © ${new Date().getFullYear()} Poke Ai, Inc. Built with Docusaurus.`,
       },
       prism: {
