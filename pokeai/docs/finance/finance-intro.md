@@ -5,6 +5,7 @@ sidebar_label: 前言
 sidebar_position: 0
 ---
 
+
 Hi there~
 
 买横买坑不买竖，卖点就在鼎沸处。
@@ -22,3 +23,4 @@ Hi there~
 ![](https://img.arctee.cn/one/202212020040323.jpg)
 
 
+**股票交流群：fuygaqi（加我微信备注“股票交流”，拉你入群）**
